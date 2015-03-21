@@ -68,6 +68,7 @@ cacheSolve <- function(x = matrix()){
 # To test the operation of these functions they were loaded into the workspace and the following
 # inputted/outputted at the console
 #
+#
 #> m <- matrix(c(-1, -2, 1, 1), 2,2)
 #> x <- makeCacheMatrix(m)
 #> x$get()
