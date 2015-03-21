@@ -10,7 +10,7 @@
 # defined. Typically a function is defined in the global environment (user's workspace). 
 # In R, functions can also be defined within other functions. By creating functions within another 
 # function we have created an isolated environment in which those functions are defined. The <<- operator
-# when used in such a function it assigns the value to the variable in that isolated environment in which the
+# when used in such a function assigns the value to the variable in that isolated environment in which the
 # functions were defined.  
 
 ## makeCacheMatrix function:
@@ -23,7 +23,7 @@
 
 makeCacheMatrix <- function(x = matrix()){
     m <- x                                  # assign the matrix argument to local variable m
-    cacheInvMatrix <- NULL                  # initialise the local variable (inverse of m) to NULL
+    cacheInvMatrix <- NULL                  # initialise the local variable (inverse matrix) to NULL
     getMatrix <- function() m               # get the value of matrix m
     getInverse <- function() cacheInvMatrix # get value of cached inverse matrix
     setInverse <- function(y){              # set value of the cached inverse matrix
